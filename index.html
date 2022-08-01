@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comment Section</title>
+  </head>
+  <body>
+    <!-- What a normal paragraph looks like -->
+    <!-- <p>Enter image URL below:</p> -->
+
+    <!-- Input so we can change the name attribute of our custom element -->
+
+    <!-- Our custom element -->
+    <div>
+      <!-- <input type="text" placeholder="image source" id="image" /> -->
+      <h3>Comment Section</h3>
+      <input type="text" placeholder="Name" id="name" />
+      <input type="text" placeholder="Email" id="email" />
+      <input type="text" placeholder="Comment" id="comment" />
+    </div>
+    <br />
+    <div>
+      <user-info
+        src="https://imgs.search.brave.com/XWhGHRGH7NWT1Z-4gaaTMKMpepS_MqxfTANQprwf-F4/rs:fit:1200:1200:1/g:ce/aHR0cDovL2dldHdh/bGxwYXBlcnMuY29t/L3dhbGxwYXBlci9m/dWxsLzMvMC82LzU4/MzM3OC5qcGc"
+        name="Image"
+        id="image-source"
+        description="Jake reading a book"
+      >
+      </user-info>
+    </div>
+
+    <!-- The template for our custom element -->
+    <template id="SUPERAWESOME">
+      <style>
+        p {
+          font-weight: bold;
+        }
+
+        span {
+          color: red;
+        }
+        img {
+          width: 200px;
+        }
+        #ratings {
+          font-weight: normal;
+          font-style: italic;
+        }
+      </style>
+      <img />
+      <p>Description: <span id="description"></span></p>
+      <p>Rating: <span id="ratings"></span></p>
+    </template>
+  </body>
+</html>
